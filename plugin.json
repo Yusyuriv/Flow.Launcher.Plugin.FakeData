@@ -1,0 +1,12 @@
+{
+  "ID": "8BE6E623BC294D4684F86A47CA797742",
+  "ActionKeyword": "fake",
+  "Name": "Fake Data",
+  "Description": "Generates a variety of fake data using the Bogus library",
+  "Author": "Yusyuriv",
+  "Version": "1.0.0",
+  "Language": "csharp",
+  "Website": "https://github.com/Yusyuriv/Flow.Launcher.Plugin.FakeData",
+  "IcoPath": "app.png",
+  "ExecuteFileName": "Flow.Launcher.Plugin.FakeData.dll"
+}

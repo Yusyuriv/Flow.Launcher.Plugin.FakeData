@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0-windows</TargetFramework>
+        <AssemblyName>Flow.Launcher.Plugin.FakeData</AssemblyName>
+        <PackageId>Flow.Launcher.Plugin.FakeData</PackageId>
+        <Authors>Yusyuriv</Authors>
+        <PackageProjectUrl>https://github.com/Yusyuriv/Flow.Launcher.Plugin.FakeData</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/Yusyuriv/Flow.Launcher.Plugin.FakeData</RepositoryUrl>
+        <PackageTags>flow-launcher flow-plugin faker bogus</PackageTags>
+        <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+        <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+        <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+        <DebugSymbols>false</DebugSymbols>
+        <DebugType>None</DebugType>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Content Include=".github/workflows/*" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Content Include="plugin.json" CopyToOutputDirectory="Always" />
+        <Content Include="app.png" CopyToOutputDirectory="PreserveNewest" />
+        <Content Include="LICENSE" CopyToOutputDirectory="PreserveNewest" />
+        <Content Include="THIRD-PARTY-LICENSES" CopyToOutputDirectory="PreserveNewest" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Bogus" Version="35.4.0"/>
+        <PackageReference Include="Flow.Launcher.Plugin" Version="4.2.0"/>
+        <PackageReference Include="JetBrains.Annotations" Version="2023.3.0" PrivateAssets="All" />
+    </ItemGroup>
+
+</Project>
